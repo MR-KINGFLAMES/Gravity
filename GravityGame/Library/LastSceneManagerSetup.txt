@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/KokoLaser.unity
+- path: Assets/Scenes/KokoKey.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

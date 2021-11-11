@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PMove : MonoBehaviour
 {
-    public float currentSpeed = 3;
-    public float JumpForce = 3;
+    public float currentSpeed = 8;
+    public float JumpForce = 5;
     public float runSpeed;
     public float walkSpeed;
 

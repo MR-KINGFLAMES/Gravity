@@ -9,7 +9,7 @@ public class CollectKey : MonoBehaviour
     {
         if (other.gameObject.tag == "key")
         Destroy(other.gameObject);
-        if ((other.gameObject.tag == "door") && ())
+        if ((other.gameObject.tag == "door"))
         {
             //int y = SceneManager.GetActiveScene().buildIndex;
             //SceneManager.LoadScene(y + 1);

@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 317874282673980978}
   - component: {fileID: 317874282673980979}
-  - component: {fileID: 317874282673980973}
-  - component: {fileID: 317874282673980974}
   - component: {fileID: 317874282673980972}
   - component: {fileID: 317874282673980977}
   - component: {fileID: 8303949880871408040}
   - component: {fileID: 317874282673980976}
+  - component: {fileID: 1748661021576630797}
+  - component: {fileID: 8508739901342155158}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -87,34 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &317874282673980973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317874282673980975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2070531a932ac9449d39051a05bb806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &317874282673980974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317874282673980975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b6658a2bd963c045b088b580ff511a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSpeed: 8
-  JumpForce: 5
-  runSpeed: 0
-  walkSpeed: 0
 --- !u!61 &317874282673980972
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -187,3 +159,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c9f19e19088a745ab097d172133c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1748661021576630797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317874282673980975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c2c3f5df862ca4b90933969886fa2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8508739901342155158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317874282673980975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c4016c25702eb4b93748aaedf094e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSpeed: 3
+  JumpForce: 3
+  runSpeed: 0
+  walkSpeed: 0

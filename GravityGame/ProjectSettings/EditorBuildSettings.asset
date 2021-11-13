@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Level2(Koko).unity
+    guid: da3336759f905f04d8c34a7db8bb216a
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: ac5d80fb3b0f18847857bb0e432deec9
   m_configObjects: {}

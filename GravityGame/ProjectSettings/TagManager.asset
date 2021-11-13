@@ -8,6 +8,7 @@ TagManager:
   - bulletStopper
   - Bullets
   - door
+  - Box
   layers:
   - Default
   - TransparentFX

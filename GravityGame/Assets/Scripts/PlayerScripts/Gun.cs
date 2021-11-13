@@ -5,11 +5,10 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
 
-    [SerializeField] Camera cam;
-    [SerializeField] float maxGrabDistance = 10f, throwForce = 20f, lerpSpeed = 10f;
-    [SerializeField] Transform objectHolder;
-
-    Rigidbody grabbedRB;
+    public Transform grabDet;
+    public Transform boxHold;
+    public float rayDist;
+    
     void Start()
     {
         
@@ -29,38 +28,23 @@ public class Gun : MonoBehaviour
             transform.eulerAngles = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
         }
 
-        if (grabbedRB)
-        {
-            grabbedRB.MovePosition(Vector3.Lerp(grabbedRB.position, objectHolder.transform.position, Time.deltaTime * lerpSpeed));
+        RaycastHit2D grabCheck = Physics2D.Raycast(grabDet.position, Vector2.right * transform.localScale, rayDist);
 
+        if(grabCheck.collider != null && grabCheck.collider.tag == "Box")
+        {
             if (Input.GetMouseButtonDown(1))
             {
-                grabbedRB.isKinematic = true;
-                grabbedRB = null;
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if (grabbedRB)
-            {
-                grabbedRB.isKinematic = false;
-                grabbedRB = null;
+                grabCheck.collider.gameObject.transform.parent = boxHold;
+                grabCheck.collider.gameObject.transform.position = boxHold.position;
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
             }
             else
             {
-                RaycastHit hit;
-                Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f));
-                if (Physics.Raycast(ray, out hit, maxGrabDistance))
-                {
-                    grabbedRB = hit.collider.gameObject.GetComponent<Rigidbody>();
-                    if (grabbedRB)
-                    {
-                        grabbedRB.isKinematic = true;
-                    }
-                }
+                grabCheck.collider.gameObject.transform.parent = null;
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
             }
         }
+        
 
     }
 }

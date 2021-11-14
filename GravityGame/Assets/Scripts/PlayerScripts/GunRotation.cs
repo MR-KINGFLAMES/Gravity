@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class GunRotation : MonoBehaviour
 {
+    public GameObject SpacePlayer;
 
-
-    void Update()
+   private void FixedUpdate()
     {
+
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+
+        difference.Normalize();
 
         Vector3 MousePos = Input.mousePosition;
         Vector3 gunpos = Camera.main.WorldToScreenPoint(transform.position);

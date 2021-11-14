@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/SampleScene.unity
+=======
+- path: Assets/Scenes/Level6(koko).unity
+>>>>>>> 6eb34e2dac826208dcef12482214bd7435046ec7
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -5,25 +5,13 @@ using UnityEngine;
 public class parabolicMotion : MonoBehaviour
 {
 
-    /// <summary>
-    /// Animation Speed
-    /// </summary>
-    public float Speed = 1;
+    public float Speed = 1; //Speed the object travels at
 
-    /// <summary>
-    /// Start of Parabola
-    /// </summary>
-    public GameObject ParabolaRoot;
+    public GameObject ParabolaRoot; //The path the object travels on 
 
-    /// <summary>
-    /// Autostart Animation
-    /// </summary>
-    public bool Autostart = true;
+    public bool Autostart = true; //Starts moving when the object is loaded in
 
-    /// <summary>
-    /// Animate
-    /// </summary>
-    public bool Animation = true;
+    public bool Animation = true; //Might be needed when chainsaw sprites are in 
 
     //next parabola event
     internal bool nextParbola = false;

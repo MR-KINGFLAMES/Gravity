@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be1e638b36c4c84f94b75c38a67c4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 13
+  Speed: 5
   ParabolaRoot: {fileID: 921001643}
   Autostart: 1
   Animation: 1
@@ -884,7 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be1e638b36c4c84f94b75c38a67c4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 13
+  Speed: 5
   ParabolaRoot: {fileID: 1888966255}
   Autostart: 1
   Animation: 1

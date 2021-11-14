@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/GunScene.unity
+- path: Assets/Scenes/Level6(koko).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

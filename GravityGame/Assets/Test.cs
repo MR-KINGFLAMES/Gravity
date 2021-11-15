@@ -27,11 +27,6 @@ public class Test : MonoBehaviour
         pointABCD.position = Vector3.Lerp(pointAB_BC.position, pointBC_CD.position, interpolateAmount);
         */
         pointABCD.position = CubicLerp(pointA.position, pointB.position, pointC.position, pointD.position, interpolateAmount);
-        if (interpolateAmount == 1)
-        {
-            otherChainsaw.SetActive(true);
-            gameObject.SetActive(false);
-        }
     }
     private Vector3 QuadraticLerp(Vector3 a, Vector3 b, Vector3 c, float t)
     {

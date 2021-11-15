@@ -16,9 +16,16 @@ public class chainsawSwap : MonoBehaviour
 
     void Update()
     {
-        if (ChainsawForward )
+     //   if (ChainsawMotionForward && )
+        {
+      //      ChainsawMotionForward = false;
+      //      ChainsawForward.SetActive(false);
+      //      ChainsawBackward.SetActive(true);
+        }
+      //  else if (!ChainsawMotionForward && )
         {
 
         }
+
     }
 }

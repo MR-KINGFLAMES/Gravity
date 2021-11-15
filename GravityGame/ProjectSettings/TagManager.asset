@@ -9,6 +9,7 @@ TagManager:
   - Bullets
   - door
   - Box
+  - player
   layers:
   - Default
   - TransparentFX

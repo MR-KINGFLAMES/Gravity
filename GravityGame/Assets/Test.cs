@@ -16,7 +16,7 @@ public class Test1 : MonoBehaviour
     void Update()
     {
         interpolateAmount = (interpolateAmount + Time.deltaTime) % 1f;
-
+       
        /*
         pointAB.position = Vector3.Lerp(pointA.position, pointB.position, interpolateAmount);
         pointBC.position = Vector3.Lerp(pointB.position, pointC.position, interpolateAmount);
@@ -28,9 +28,7 @@ public class Test1 : MonoBehaviour
         pointABCD.position = Vector3.Lerp(pointAB_BC.position, pointBC_CD.position, interpolateAmount);
         */
         pointABCD.position = CubicLerp(pointA.position, pointB.position, pointC.position, pointD.position, interpolateAmount);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 
         if (whoIsVisible)
         {
@@ -38,20 +36,18 @@ public class Test1 : MonoBehaviour
             Chainsaw.SetActive(true);
             otherChainsaw.SetActive(false);
         }
-        if(!whoIsVisible)
+        if (!whoIsVisible)
         {
 
             Debug.Log("chainsaw is inactive");
             Chainsaw.SetActive(false);
             otherChainsaw.SetActive(true);
-=======
+        }
         if (interpolateAmount == 1)
         {
             otherChainsaw.SetActive(true);
             gameObject.SetActive(false);
->>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
         }
->>>>>>> c81888649a65154b37b8c7c1b39556ae19a598de
     }
     private Vector3 QuadraticLerp(Vector3 a, Vector3 b, Vector3 c, float t)
     {
@@ -68,24 +64,4 @@ public class Test1 : MonoBehaviour
 
         return Vector3.Lerp(ab_bc, bc_cd, interpolateAmount);
     }
-   /* void OnTriggerEnter2D(Collider2D collision)
-    {
-        if ((collision.gameObject.tag == "chainsawControl"))
-        {
-<<<<<<< HEAD
-            if (whoIsVisible)
-            {
-                whoIsVisible = false;
-
-            }
-            if (!whoIsVisible)
-            {
-            }
-            
-=======
-            otherChainsaw.SetActive(true);
-            gameObject.SetActive(false);
->>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
-        }
-    }*/
 }

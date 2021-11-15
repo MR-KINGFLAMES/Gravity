@@ -1,13 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/SampleScene.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/KokoStasisGun.unity
-=======
-- path: Assets/Scenes/Main Menu.unity
->>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
->>>>>>> c81888649a65154b37b8c7c1b39556ae19a598de
+- path: Assets/Scenes/SampleScene - Copy.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

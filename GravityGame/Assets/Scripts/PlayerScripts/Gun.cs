@@ -30,30 +30,42 @@ public class Gun : MonoBehaviour
 
         RaycastHit2D grabCheck = Physics2D.Raycast(grabDet.position, Vector2.right * transform.localScale, rayDist);
         
-        //grab object with left click
-        if(grabCheck.collider != null && grabCheck.collider.tag == "Box")
-        {
-            if (Input.GetKey(KeyCode.Mouse0))
-            {
-                grabCheck.collider.gameObject.transform.parent = boxHold;
-                grabCheck.collider.gameObject.transform.position = boxHold.position;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-            }
-            else
-            {
-                grabCheck.collider.gameObject.transform.parent = null;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
-            }
-        }
 
 
-        //Freeze Object
+
+
+
+
+
+
+
+
+
+
+        ////grab object with left click
+        //if(grabCheck.collider != null && grabCheck.collider.tag == "Box")
+        //{
+        //    if (Input.GetKey(KeyCode.Mouse0))
+        //    {
+        //        grabCheck.collider.gameObject.transform.parent = boxHold;
+        //        grabCheck.collider.gameObject.transform.position = boxHold.position;
+        //        grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        //    }
+        //    else
+        //    {
+        //        grabCheck.collider.gameObject.transform.parent = null;
+        //        grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+        //    }
+        //}
+
+
+        ////Freeze Object
        
-            if (Input.GetKey(KeyCode.Mouse1))
-            {
+        //    //if (Input.GetKeyUp(KeyCode.Mouse1))
+        //    //{
               
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            }
+        //    //    grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        //    //}
             
 
 

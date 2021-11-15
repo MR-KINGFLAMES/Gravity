@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/GunScene.unity
-=======
-- path: Assets/Scenes/level1(koko).unity
->>>>>>> efe12f6d95a6e128f6959dadb82100986cb23ed5
   isLoaded: 1
   isActive: 1
   isSubScene: 0

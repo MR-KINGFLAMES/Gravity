@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/KokoStasisGun.unity
-=======
-- path: Assets/Scenes/Main Menu.unity
->>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
+- path: Assets/Scenes/AnutherSceneGorl.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

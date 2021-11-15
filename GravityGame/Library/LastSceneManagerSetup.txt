@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/AnutherSceneGorl.unity
+=======
+- path: Assets/Scenes/SampleScene - Copy.unity
+>>>>>>> c3197ab7604dda9342c395788546eb172b4d1990
   isLoaded: 1
   isActive: 1
   isSubScene: 0

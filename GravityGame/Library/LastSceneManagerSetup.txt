@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Level6(koko).unity
-=======
-- path: Assets/Scenes/Main Menu.unity
->>>>>>> e5e789f3b960953c215ca3c81946b4369dfca39d
+- path: Assets/Scenes/level1(koko).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

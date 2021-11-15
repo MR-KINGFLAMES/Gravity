@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test1 : MonoBehaviour
+public class Test : MonoBehaviour
 {
     [SerializeField] private Transform pointA;
     [SerializeField] private Transform pointB;
     [SerializeField] private Transform pointC;
     [SerializeField] private Transform pointD;
     [SerializeField] private Transform pointABCD;
-    public GameObject Chainsaw;
-    public GameObject otherChainsaw;
     public float interpolateAmount;
-    bool whoIsVisible = false;
+
     void Update()
     {
-        interpolateAmount = (interpolateAmount + Time.deltaTime) % 1f;
+            interpolateAmount = (interpolateAmount + Time.deltaTime) % 1f;
+
 
        /*
         pointAB.position = Vector3.Lerp(pointA.position, pointB.position, interpolateAmount);
@@ -28,30 +27,6 @@ public class Test1 : MonoBehaviour
         pointABCD.position = Vector3.Lerp(pointAB_BC.position, pointBC_CD.position, interpolateAmount);
         */
         pointABCD.position = CubicLerp(pointA.position, pointB.position, pointC.position, pointD.position, interpolateAmount);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-        if (whoIsVisible)
-        {
-            Debug.Log("chainsaw isactive");
-            Chainsaw.SetActive(true);
-            otherChainsaw.SetActive(false);
-        }
-        if(!whoIsVisible)
-        {
-
-            Debug.Log("chainsaw is inactive");
-            Chainsaw.SetActive(false);
-            otherChainsaw.SetActive(true);
-=======
-        if (interpolateAmount == 1)
-        {
-            otherChainsaw.SetActive(true);
-            gameObject.SetActive(false);
->>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
-        }
->>>>>>> c81888649a65154b37b8c7c1b39556ae19a598de
     }
     private Vector3 QuadraticLerp(Vector3 a, Vector3 b, Vector3 c, float t)
     {
@@ -68,24 +43,11 @@ public class Test1 : MonoBehaviour
 
         return Vector3.Lerp(ab_bc, bc_cd, interpolateAmount);
     }
-   /* void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if ((collision.gameObject.tag == "chainsawControl"))
         {
-<<<<<<< HEAD
-            if (whoIsVisible)
-            {
-                whoIsVisible = false;
-
-            }
-            if (!whoIsVisible)
-            {
-            }
             
-=======
-            otherChainsaw.SetActive(true);
-            gameObject.SetActive(false);
->>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
         }
-    }*/
+    }
 }

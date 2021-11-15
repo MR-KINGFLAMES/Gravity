@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class Test1 : MonoBehaviour
 {
     [SerializeField] private Transform pointA;
     [SerializeField] private Transform pointB;
     [SerializeField] private Transform pointC;
     [SerializeField] private Transform pointD;
     [SerializeField] private Transform pointABCD;
+    public GameObject Chainsaw;
     public GameObject otherChainsaw;
     public float interpolateAmount;
-
+    bool whoIsVisible = false;
     void Update()
     {
             interpolateAmount = (interpolateAmount + Time.deltaTime) % 1f;
@@ -28,6 +29,20 @@ public class Test : MonoBehaviour
         pointABCD.position = Vector3.Lerp(pointAB_BC.position, pointBC_CD.position, interpolateAmount);
         */
         pointABCD.position = CubicLerp(pointA.position, pointB.position, pointC.position, pointD.position, interpolateAmount);
+
+        if (whoIsVisible)
+        {
+            Debug.Log("chainsaw isactive");
+            Chainsaw.SetActive(true);
+            otherChainsaw.SetActive(false);
+        }
+        if(!whoIsVisible)
+        {
+
+            Debug.Log("chainsaw is inactive");
+            Chainsaw.SetActive(false);
+            otherChainsaw.SetActive(true);
+        }
     }
     private Vector3 QuadraticLerp(Vector3 a, Vector3 b, Vector3 c, float t)
     {
@@ -48,7 +63,14 @@ public class Test : MonoBehaviour
     {
         if ((collision.gameObject.tag == "chainsawControl"))
         {
-            otherChainsaw.SetActive(false);
+            if (whoIsVisible)
+            {
+                whoIsVisible = false;
+
+            }
+            if (!whoIsVisible)
+            {
+            }
             
         }
     }

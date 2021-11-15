@@ -14,8 +14,7 @@ public class Test : MonoBehaviour
 
     void Update()
     {
-            interpolateAmount = (interpolateAmount + Time.deltaTime) % 1f;
-
+        interpolateAmount = (interpolateAmount + Time.deltaTime) % 1f;
 
        /*
         pointAB.position = Vector3.Lerp(pointA.position, pointB.position, interpolateAmount);
@@ -28,6 +27,11 @@ public class Test : MonoBehaviour
         pointABCD.position = Vector3.Lerp(pointAB_BC.position, pointBC_CD.position, interpolateAmount);
         */
         pointABCD.position = CubicLerp(pointA.position, pointB.position, pointC.position, pointD.position, interpolateAmount);
+        if (interpolateAmount == 1)
+        {
+            otherChainsaw.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
     private Vector3 QuadraticLerp(Vector3 a, Vector3 b, Vector3 c, float t)
     {
@@ -44,12 +48,12 @@ public class Test : MonoBehaviour
 
         return Vector3.Lerp(ab_bc, bc_cd, interpolateAmount);
     }
-    void OnTriggerEnter2D(Collider2D collision)
+   /* void OnTriggerEnter2D(Collider2D collision)
     {
         if ((collision.gameObject.tag == "chainsawControl"))
         {
-            otherChainsaw.SetActive(false);
-            
+            otherChainsaw.SetActive(true);
+            gameObject.SetActive(false);
         }
-    }
+    }*/
 }

@@ -1,6 +1,7 @@
 sceneSetups:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/GunScene.unity
 =======
 <<<<<<< HEAD
@@ -10,6 +11,10 @@ sceneSetups:
 >>>>>>> e5e789f3b960953c215ca3c81946b4369dfca39d
 >>>>>>> 56161eea24bc94d07ed5243941e4980cc1634c76
 =======
+=======
+- path: Assets/Scenes/GunScene.unity
+=======
+>>>>>>> 9f3e46a600404bf179b7d20b361778775e35b692
 - path: Assets/Scenes/level1(koko).unity
 >>>>>>> efe12f6d95a6e128f6959dadb82100986cb23ed5
   isLoaded: 1

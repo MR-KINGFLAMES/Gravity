@@ -15,6 +15,7 @@ public class FlipG : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(2))
         {
+            transform.localScale = new Vector2(transform.localScale.x, -transform.localScale.y);
            _rb.gravityScale *= -1;
         }
     }

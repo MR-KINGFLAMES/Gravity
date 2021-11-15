@@ -9,19 +9,14 @@ public class Test : MonoBehaviour
     [SerializeField] private Transform pointC;
     [SerializeField] private Transform pointD;
     [SerializeField] private Transform pointABCD;
+    public GameObject otherChainsaw;
     public float interpolateAmount;
-    public bool reverse;
 
     void Update()
     {
-        if (!reverse)
-        {
             interpolateAmount = (interpolateAmount + Time.deltaTime) % 1f;
-        }
-        else
-        {
-            interpolateAmount = (interpolateAmount - Time.deltaTime) % 1f;
-        }
+
+
        /*
         pointAB.position = Vector3.Lerp(pointA.position, pointB.position, interpolateAmount);
         pointBC.position = Vector3.Lerp(pointB.position, pointC.position, interpolateAmount);
@@ -33,10 +28,6 @@ public class Test : MonoBehaviour
         pointABCD.position = Vector3.Lerp(pointAB_BC.position, pointBC_CD.position, interpolateAmount);
         */
         pointABCD.position = CubicLerp(pointA.position, pointB.position, pointC.position, pointD.position, interpolateAmount);
-        if (pointABCD.position == pointD.position)
-        {
-            reverse = true;
-        }
     }
     private Vector3 QuadraticLerp(Vector3 a, Vector3 b, Vector3 c, float t)
     {
@@ -52,5 +43,13 @@ public class Test : MonoBehaviour
         Vector3 bc_cd = QuadraticLerp(b, c, d, t);
 
         return Vector3.Lerp(ab_bc, bc_cd, interpolateAmount);
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if ((collision.gameObject.tag == "chainsawControl"))
+        {
+            otherChainsaw.SetActive(false);
+            
+        }
     }
 }

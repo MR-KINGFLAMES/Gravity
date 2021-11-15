@@ -43,9 +43,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1920
     height: 947
   m_MinSize: {x: 678, y: 492}
+=======
+    width: 1522
+    height: 717
+  m_MinSize: {x: 677, y: 492}
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
   controlID: 17
@@ -66,8 +72,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1531
     y: 0
+<<<<<<< HEAD
     width: 389
     height: 947
+=======
+    width: 308
+    height: 717
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
@@ -117,9 +128,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 575
     width: 1531
     height: 372
+=======
+    y: 436
+    width: 1214
+    height: 281
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 13}
@@ -214,12 +231,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1531
     height: 947
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 64
+=======
+    width: 1214
+    height: 717
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 59
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +270,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 65
+=======
+  controlID: 60
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +368,35 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Prefabs
+=======
+    - Assets/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scenes
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\GGPC\Documents\New folder\GravityGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 663e0000
     m_LastClickedID: 15974
     m_ExpandedIDs: 00000000dc3d00006a3e000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 20400000
+    m_LastClickedID: 16416
+    m_ExpandedIDs: 00000000063d0000083d00001c4000002644000000ca9a3b
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +424,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000dc3d0000de3d0000
+=======
+    m_ExpandedIDs: 00000000063d0000083d0000
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,9 +551,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 2ab6ffffaebaffffc8baffffa6beffff9ed5ffffc4d9ffffccd9ffff76f8ffff143d0000f44c0000424d00000a590000dc590000
+=======
+      m_SelectedIDs: ac450000
+      m_LastClickedID: 0
+      m_ExpandedIDs: e6e9ffff16eaffff1eeaffff64eaffffcceaffff8cebffffcaedffff26eeffff62fbffff8c3c0000b247000084480000
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +619,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 0.60735506, y: -0.87308526, z: -245.84433}
     speed: 2
     m_Value: {x: 0.60735506, y: -0.87308526, z: -245.84433}
+=======
+    m_Target: {x: 256.09332, y: 119.172325, z: -99.31724}
+    speed: 2
+    m_Value: {x: 246.82812, y: 115.72406, z: -98.20216}
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -616,9 +677,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 8.470543
     speed: 2
     m_Value: 8.470543
+=======
+    m_Target: 259.19485
+    speed: 2
+    m_Value: 248.03336
+>>>>>>> a41010b76c9589221481d4da31fcee5c4ee055dc
   m_Ortho:
     m_Target: 1
     speed: 2

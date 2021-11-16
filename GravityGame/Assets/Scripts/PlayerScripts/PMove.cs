@@ -13,6 +13,8 @@ public class PMove : MonoBehaviour
     public float maxO2 = 300;
     public float currentO2;
 
+    public GameObject GameOverUI;
+
     private Rigidbody2D _rb;
     bool isGrounded;
 
@@ -63,6 +65,13 @@ public class PMove : MonoBehaviour
             }
         }
         StartCoroutine(DamageOverTimeCoroutine(0, 0));
+
+        //DeathScreenUI
+        if (currentO2 <= 0)
+        {
+            Lost();
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -82,7 +91,7 @@ public class PMove : MonoBehaviour
         {
             gameObject.transform.position = spawn.position;
             TakeDamage(10);
-            
+
         }
 
         if (col.gameObject.tag == "o2can")
@@ -104,7 +113,7 @@ public class PMove : MonoBehaviour
 
     }
 
-  
+
     void TakeDamage(int damage)
     {
         currentO2 -= damage;
@@ -131,6 +140,12 @@ public class PMove : MonoBehaviour
         }
     }
 
+    //DeathScreen UI
+    public void Lost()
+    {
+        GameOverUI.SetActive(true);
+        Time.timeScale = 0f;
+    }
 
 }
 

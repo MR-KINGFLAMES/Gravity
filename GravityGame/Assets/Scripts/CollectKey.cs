@@ -9,11 +9,14 @@ public class CollectKey : MonoBehaviour
     {
         if (other.gameObject.tag == "key")
         Destroy(other.gameObject);
-        if ((other.gameObject.tag == "door"))
+        if (GameObject.FindGameObjectsWithTag("key").Length == 0)
         {
-            int y = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(y + 1);
-            Debug.Log("Change Levels");
+            if ((other.gameObject.tag == "door"))
+            {
+                int y = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(y + 1);
+                Debug.Log("Change Levels");
+            }
         }
     }
 }

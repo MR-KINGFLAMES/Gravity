@@ -19,7 +19,7 @@ public class bulletDestroyed1 : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "bulletStopper")
+        if (collision.gameObject.tag == "Box")
         {
             Destroy(gameObject);
         }

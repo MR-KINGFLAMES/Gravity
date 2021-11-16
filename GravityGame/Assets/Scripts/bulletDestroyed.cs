@@ -19,6 +19,10 @@ public class bulletDestroyed : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Box")
+        {
+            Destroy(gameObject);
+        }
         if(collision.gameObject.tag == "player")
         {
 

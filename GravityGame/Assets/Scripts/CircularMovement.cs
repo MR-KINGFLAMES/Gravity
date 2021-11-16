@@ -13,7 +13,7 @@ public class CircularMovement : MonoBehaviour
     private float timer = 5.0f;
 
     [Range(0, 5)]
-    public float RotateSpeed = 5f;
+    public float RotateSpeed = 2.4f;
     [Range(0, 5)]
     public float Radius = 1f;
 
@@ -41,7 +41,7 @@ public class CircularMovement : MonoBehaviour
                 Debug.Log("Time ran out");
                 timer = 5.0f;
 
-                RotateSpeed = 5f;
+                RotateSpeed = 2.4f;
                 canUseGun.canUseGunHead = true;
                 countingDown = false;
                 isFrozen = false;

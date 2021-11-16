@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Level6_V4.unity
-=======
-- path: Assets/Scenes/level1(koko).unity
->>>>>>> 9c28834ac5fec89bcf938f1e2c5683b777f10535
+- path: Assets/Scenes/Level4.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

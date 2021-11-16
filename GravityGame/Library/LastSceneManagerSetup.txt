@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Level6(koko).unity
+=======
+- path: Assets/Scenes/AnutherSceneGorl.unity
+>>>>>>> 051f98476d238f3956fdb343b06ad8a71144cb5f
   isLoaded: 1
   isActive: 1
   isSubScene: 0

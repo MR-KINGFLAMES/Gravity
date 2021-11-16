@@ -12,6 +12,7 @@ TagManager:
   - player
   - arm
   - chainsawControl
+  - manager
   layers:
   - Default
   - TransparentFX

@@ -71,6 +71,28 @@ public class freezeObjectV2 : MonoBehaviour
 
             }
         }
+        if (gameObject.tag == "key")
+        {
+            if (Input.GetMouseButtonDown(2))
+            {
+                if (!isFrozen)
+                {
+                    _rb.gravityScale *= -1f;
+                }
+
+            }
+        }
+        if (gameObject.tag == "heavyObject")
+        {
+            if (Input.GetMouseButtonDown(2))
+            {
+                if (!isFrozen)
+                {
+                    _rb.gravityScale *= -1f;
+                }
+
+            }
+        }
     }
     private void OnMouseEnter()
     {

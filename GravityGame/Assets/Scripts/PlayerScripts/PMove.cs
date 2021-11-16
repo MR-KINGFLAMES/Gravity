@@ -55,23 +55,18 @@ public class PMove : MonoBehaviour
         }
     }
 
-        void OnCollisionEnter2D(Collision2D col)
-        {
+    void OnCollisionEnter2D(Collision2D col)
+    {
 
-            if (col.gameObject.name == "Roof")
-            {
-                Debug.Log("Touched Roof");
+        if (col.gameObject.tag == "Floor")
+        {
+            Debug.Log("Touched Floor");
+            isGrounded = true;
+        }
+        else
+        {
             isGrounded = false;
         }
-            else if (col.gameObject.name == "Floor")
-            {
-                Debug.Log("Touched Floor");
-                isGrounded = true;
-            }
-        }
-
-    
-
-
-
+    }
 }
+

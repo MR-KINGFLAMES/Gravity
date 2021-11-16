@@ -85,6 +85,12 @@ public class PMove : MonoBehaviour
             
         }
 
+        if (col.gameObject.tag == "o2can")
+        {
+            HealO2(30);
+            Destroy(col.gameObject);
+        }
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -102,6 +108,11 @@ public class PMove : MonoBehaviour
     void TakeDamage(int damage)
     {
         currentO2 -= damage;
+    }
+
+    void HealO2(int heal)
+    {
+        currentO2 += heal;
     }
 
     IEnumerator DamageOverTimeCoroutine(float damageAmount, float duration)

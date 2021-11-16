@@ -17,6 +17,7 @@ TagManager:
   - NotFloor
   - slot
   - heavyObject
+  - o2can
   layers:
   - Default
   - TransparentFX

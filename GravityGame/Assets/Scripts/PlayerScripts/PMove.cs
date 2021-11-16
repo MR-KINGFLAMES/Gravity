@@ -9,18 +9,27 @@ public class PMove : MonoBehaviour
     public float runSpeed;
     public float walkSpeed;
 
+    public O2Bar o2bar;
+    public float maxO2 = 300;
+    public float currentO2;
+
     private Rigidbody2D _rb;
     bool isGrounded;
 
+    public Transform spawn;
+
     void Start()
     {
+        currentO2 = maxO2;
+        o2bar.SetO2(currentO2);
+
         _rb = GetComponent<Rigidbody2D>();
     }
 
 
     void Update()
     {
-
+        o2bar.SetO2(currentO2);
 
         walkSpeed = currentSpeed;
 
@@ -53,6 +62,7 @@ public class PMove : MonoBehaviour
 
             }
         }
+        StartCoroutine(DamageOverTimeCoroutine(0, 0));
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -67,6 +77,49 @@ public class PMove : MonoBehaviour
         {
             isGrounded = false;
         }
+
+        if (col.gameObject.tag == "Saw")
+        {
+            gameObject.transform.position = spawn.position;
+            TakeDamage(10);
+            
+        }
+
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Bullets")
+        {
+
+            TakeDamage(10);
+            Destroy(collision.gameObject);
+        }
+
+    }
+
+  
+    void TakeDamage(int damage)
+    {
+        currentO2 -= damage;
+    }
+
+    IEnumerator DamageOverTimeCoroutine(float damageAmount, float duration)
+    {
+        float amountDamage = 0;
+        duration = 10000;
+        damageAmount = 1;
+        float damagePerLoop = damageAmount / duration;
+
+        while (amountDamage < damageAmount)
+        {
+            currentO2 -= damagePerLoop;
+            Debug.Log("Taking Damage Right Now");
+            amountDamage += damagePerLoop;
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
+
 }
 

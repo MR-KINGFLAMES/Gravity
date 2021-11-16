@@ -1,0 +1,10 @@
+diff a/GravityGame/Assets/Prefabs/SpacePlayer.prefab b/GravityGame/Assets/Prefabs/SpacePlayer.prefab	(rejected hunks)
+@@ -162,8 +162,6 @@
+   m_Script: {fileID: 11500000, guid: 4d26569da7c69194eaf773252a7455eb, type: 3}
+   m_Name: 
+   m_EditorClassIdentifier: 
+-  grabDet: {fileID: 3318164026166297894}
+-  boxHold: {fileID: 3318164024788850202}
+   grabDet: {fileID: 0}
+   boxHold: {fileID: 0}
+   rayDist: 3

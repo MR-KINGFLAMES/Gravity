@@ -23,9 +23,10 @@ public class bulletDestroyed1 : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if(collision.gameObject.tag == "player")
+        if(collision.gameObject.tag == "Floor")
         {
 
+            Destroy(gameObject);
         }
     }
 }

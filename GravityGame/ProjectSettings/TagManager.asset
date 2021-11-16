@@ -18,6 +18,9 @@ TagManager:
   - slot
   - heavyObject
   - o2can
+  - Saw
+  - slot1
+  - slot2
   layers:
   - Default
   - TransparentFX

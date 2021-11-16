@@ -1034,7 +1034,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6995a77bffeabcf488c8cfe3d159930f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 1203734200}
 --- !u!1001 &876459610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1572,7 +1571,7 @@ PrefabInstance:
     - target: {fileID: 965604272434492000, guid: 93bc0de8d72c7e845bb45691af0b9695,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9348061
+      value: 1.0447817
       objectReference: {fileID: 0}
     - target: {fileID: 965604272434492000, guid: 93bc0de8d72c7e845bb45691af0b9695,
         type: 3}
@@ -1582,7 +1581,7 @@ PrefabInstance:
     - target: {fileID: 965604272434492000, guid: 93bc0de8d72c7e845bb45691af0b9695,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.529
+      value: -3.594
       objectReference: {fileID: 0}
     - target: {fileID: 965604272434492000, guid: 93bc0de8d72c7e845bb45691af0b9695,
         type: 3}
@@ -1632,7 +1631,7 @@ PrefabInstance:
     - target: {fileID: 965604272434492005, guid: 93bc0de8d72c7e845bb45691af0b9695,
         type: 3}
       propertyPath: m_TagString
-      value: Floor
+      value: Box
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93bc0de8d72c7e845bb45691af0b9695, type: 3}
@@ -1800,7 +1799,7 @@ PrefabInstance:
     - target: {fileID: 965604272434492005, guid: 93bc0de8d72c7e845bb45691af0b9695,
         type: 3}
       propertyPath: m_TagString
-      value: Floor
+      value: Box
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93bc0de8d72c7e845bb45691af0b9695, type: 3}

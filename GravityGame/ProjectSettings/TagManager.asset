@@ -9,6 +9,12 @@ TagManager:
   - Bullets
   - door
   - Box
+  - player
+  - arm
+  - chainsawControl
+  - manager
+  - Floor
+  - NotFloor
   layers:
   - Default
   - TransparentFX

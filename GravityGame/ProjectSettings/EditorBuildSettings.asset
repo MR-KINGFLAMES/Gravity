@@ -6,9 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 30c8ac72ee929344ea81bfcffba3d242
+  - enabled: 1
+    path: Assets/Scenes/level1(koko).unity
+    guid: 72be94ba2abf8f2409047d3acafe09f7
+  - enabled: 1
     path: Assets/Scenes/Level2(Koko).unity
     guid: da3336759f905f04d8c34a7db8bb216a
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: ac5d80fb3b0f18847857bb0e432deec9
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 90e8d14229acb10468c11fecc46de283
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 69dc580e5b40ccd4b8ffc9d244d44a22
+  - enabled: 1
+    path: Assets/Scenes/Level6(koko).unity
+    guid: b3b357e2dd8eb01489012e7a4c1ad6f5
   m_configObjects: {}

@@ -8,18 +8,18 @@ public class Gun : MonoBehaviour
     public Transform grabDet;
     public Transform boxHold;
     public float rayDist;
-    
+
     void Start()
     {
-        
+
     }
 
 
     void Update()
     {
         Vector3 GunPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        
-        if(GunPos.x<transform.position.x)
+
+        if (GunPos.x < transform.position.x)
         {
             transform.eulerAngles = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
         }
@@ -29,7 +29,19 @@ public class Gun : MonoBehaviour
         }
 
         RaycastHit2D grabCheck = Physics2D.Raycast(grabDet.position, Vector2.right * transform.localScale, rayDist);
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
         //grab object with left click
         if(grabCheck.collider != null && grabCheck.collider.tag == "Box")
         {
@@ -47,16 +59,16 @@ public class Gun : MonoBehaviour
         }
 
 
-        //Freeze Object
-       
-            if (Input.GetKey(KeyCode.Mouse1))
-            {
-              
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            }
-            
+        ////Freeze Object
+
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+
+            grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        }
 
 
-        
+
+
     }
 }
